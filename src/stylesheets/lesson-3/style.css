@@ -1,0 +1,107 @@
+/* to do list */
+.to-do-container {
+  background-color: #fff;
+  min-width: 350px;
+  width: fit-content;
+  margin-bottom: 100px;
+}
+.to-do-container form input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #c4c4c4;
+}
+.to-do-container form input:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid #07b4e4;
+}
+.to-do-container form input::placeholder {
+  color: #c4c4c4;
+  margin-left: 5px;
+}
+.to-do-container input[type="checkbox"]:checked + label {
+  color: #07b4e4;
+}
+.to-do-container .btn-add {
+  background-color: #c4c4c4;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+}
+.to-do-container .btn-add:hover {
+  background-color: #07b4e4;
+}
+.to-do-container .to-do-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.to-do-container .to-do-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.to-do-container .btn-edit,
+.to-do-container .btn-delete {
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #c4c4c4;
+}
+.to-do-container .btn-edit {
+  margin-right: 5px;
+}
+.to-do-container .btn-edit:hover {
+  color: #07b4e4;
+}
+.to-do-container .btn-delete:hover {
+  color: red;
+}
+.to-do-container .footer {
+  color: #777;
+}
+@media (max-width: 320.98px) {
+  .to-do-container {
+    min-width: auto;
+  }
+  .actions {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .actions .btn-edit {
+    margin: 0;
+  }
+}
+
+/* form sign up */
+.form-container {
+  background-color: #fff;
+}
+.form-container form .h2 {
+  font-weight: 700;
+}
+.form-container form label {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.form-container form input:focus {
+  box-shadow: none;
+}
+.form-container .terms-of-use {
+  font-size: 15px;
+}
+.form-container .btn-sign-up {
+  background-color: #07b4e4;
+  color: #fff;
+}
+.form-container .btn-sign-up:hover,
+.form-container .btn-cancel:hover {
+  border: 1px solid #07b4e4;
+  color: #07b4e4;
+  background-color: #fff;
+}
+.form-container .btn-cancel {
+  color: #07b4e4;
+}
