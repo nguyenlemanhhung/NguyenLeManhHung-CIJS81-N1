@@ -9,11 +9,11 @@
   outline: none;
   border-radius: 5px;
   color: #fff;
-  border: 1px solid #cecece;
+  /* border: 1px solid #cecece; */
 }
 .App input:focus {
   box-shadow: none;
-  border: 1px solid rgb(106, 167, 246);
+  /* border: 1px solid rgb(106, 167, 246); */
 }
 .App button {
   padding: 10px 15px;

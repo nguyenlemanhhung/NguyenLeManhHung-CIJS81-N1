@@ -1,0 +1,44 @@
+.todo-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.todo-container .todo-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.todo-container .todo-form input {
+  margin-right: 10px;
+  width: 100%;
+}
+.todo-container .todo-content .todo-item {
+  padding: 10px;
+  border: 1px solid #6d6d6d;
+}
+.todo-container .todo-content .todo-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.todo-container .todo-content .todo-item-content {
+  display: flex;
+  justify-content: left;
+}
+.todo-container
+  .todo-content
+  .todo-item-content
+  input.form-check-input:checked
+  + label {
+  color: aqua;
+  text-decoration: line-through;
+}
+.todo-container .todo-content .btn-actions {
+  display: flex;
+  justify-content: end;
+}
+.todo-container .todo-content .btn-actions .btn-edit {
+  margin-right: 10px;
+}
+.todo-footer .todo-footer-left {
+  margin-top: 50px;
+  display: flex;
+  justify-content: start;
+}

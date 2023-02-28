@@ -13,6 +13,18 @@ class Nav extends React.Component {
         >
           Home
         </NavLink>
+        <NavLink
+          to="/TodoList"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          TodoList
+        </NavLink>
+        <NavLink
+          to="/TrafficLights"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          TrafficLights
+        </NavLink>
       </div>
     );
   }
