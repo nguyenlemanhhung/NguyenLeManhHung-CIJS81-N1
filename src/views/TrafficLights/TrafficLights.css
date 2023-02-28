@@ -1,3 +1,7 @@
+.traffic-lights-container {
+  text-align: center;
+}
+
 .traffic-lights {
   display: flex;
   justify-content: center;
@@ -12,4 +16,10 @@
 }
 .light:not(:last-child) {
   margin-right: 10px;
+}
+.traffic-lights-container button {
+  padding: 10px 15px;
+  background-color: rgb(106, 167, 246);
+  border: none;
+  border-radius: 5px;
 }

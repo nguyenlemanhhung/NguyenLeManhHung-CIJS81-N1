@@ -1,5 +1,5 @@
 .todo-container {
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .todo-container .todo-form {
@@ -10,17 +10,51 @@
 .todo-container .todo-form input {
   margin-right: 10px;
   width: 100%;
+  border-bottom: 1px solid #cecece;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.todo-container .todo-form input:focus {
+  border-bottom: 1px solid rgb(106, 167, 246);
 }
 .todo-container .todo-content .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
-  border: 1px solid #6d6d6d;
+  /* border-bottom: 1px solid #6d6d6d; */
+  border-radius: 10px;
 }
+.todo-container .todo-content .todo-item:hover {
+  background-color: #3b4f68;
+}
+/* .todo-container .todo-content .todo-item:hover .btn-actions {
+  opacity: 1;
+} */
 .todo-container .todo-content .todo-item:not(:last-child) {
   margin-bottom: 10px;
 }
 .todo-container .todo-content .todo-item-content {
   display: flex;
-  justify-content: left;
+  align-items: center;
+}
+.todo-container .todo-content .todo-item-content .btn-check {
+  background: none;
+  border: none;
+  outline: none;
+  color: #cecece;
+  font-size: 15px;
+  margin-right: 15px;
+}
+.todo-container .todo-content .todo-item-content input.form-check-input {
+  margin-right: 15px;
+}
+/* .todo-container
+  .todo-content
+  .todo-item-content
+  input.form-check-input:checked {
+  background-color: aqua;
 }
 .todo-container
   .todo-content
@@ -29,13 +63,26 @@
   + label {
   color: aqua;
   text-decoration: line-through;
-}
+} */
 .todo-container .todo-content .btn-actions {
-  display: flex;
-  justify-content: end;
+  min-width: max-content;
+  /* opacity: 0; */
+}
+.todo-container .todo-content .btn-actions button {
+  background: none;
+  border: none;
+  outline: none;
+  color: #cecece;
+  font-size: 15px;
 }
 .todo-container .todo-content .btn-actions .btn-edit {
   margin-right: 10px;
+}
+.todo-container .todo-content .btn-actions .btn-edit:hover {
+  color: lightskyblue;
+}
+.todo-container .todo-content .btn-actions .btn-delete:hover {
+  color: lightcoral;
 }
 .todo-footer .todo-footer-left {
   margin-top: 50px;

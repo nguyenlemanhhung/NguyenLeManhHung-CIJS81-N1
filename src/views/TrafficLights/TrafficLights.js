@@ -42,7 +42,7 @@ function TrafficLights() {
   };
 
   return (
-    <div className="container">
+    <div className="traffic-lights-container">
       <div className="traffic-lights">
         {lightColor.map((item, index) => (
           <div

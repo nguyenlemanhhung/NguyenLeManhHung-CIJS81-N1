@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   background-color: #282c34;
   min-height: 100vh;
 }
@@ -15,13 +14,13 @@
   box-shadow: none;
   /* border: 1px solid rgb(106, 167, 246); */
 }
-.App button {
+/* .App button {
   padding: 10px 15px;
   border-radius: 5px;
   background-color: rgb(106, 167, 246);
   outline: none;
   border: none;
-}
+} */
 .App button:hover {
   border: 1px solid #fff;
   color: #fff;
