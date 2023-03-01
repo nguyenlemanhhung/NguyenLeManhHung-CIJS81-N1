@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./TodoList.css";
+import Todo from "./Todo";
 
 function TodoList() {
   const [todo, setTodo] = useState();
-  const [edit, setEdit] = useState({});
   const [todoList, setTodoList] = useState([
     {
       id: 1,
@@ -60,9 +60,6 @@ function TodoList() {
     );
   };
 
-  const onAllowEdit = (todo, status) => {
-    setEdit({ id: todo.id, status: status });
-  };
   return (
     <div className="todo-container">
       <div className="todo-form">
@@ -71,60 +68,20 @@ function TodoList() {
           autoFocus
           onChange={(e) => setTodo(e.target.value)}
         />
-        <button onClick={() => handleAddTodo(todo)}>add</button>
+        <button className="btn-add" onClick={() => handleAddTodo(todo)}>
+          add
+        </button>
       </div>
       <div className="todo-content">
         {todoList &&
-          todoList.map((todo, index) => (
-            <div className="todo-item" key={index}>
-              <div className="todo-item-content">
-                <button
-                  className="btn-check"
-                  type="button"
-                  onClick={() => handleCheckComplete(todo)}
-                >
-                  <i
-                    className={todo.completed ? "fa fa-check" : "fa fa-circle"}
-                    style={{
-                      color: todo.completed ? "green" : "",
-                    }}
-                  ></i>
-                </button>
-
-                <p
-                  style={{
-                    textDecoration: todo.completed ? "line-through" : "",
-                  }}
-                >
-                  {edit.status && edit.id === todo.id ? (
-                    <input
-                      value={todo.text}
-                      onChange={(e) => handleEdit(todo, e)}
-                    />
-                  ) : (
-                    todo.text
-                  )}
-                </p>
-              </div>
-
-              <div className="btn-actions">
-                <button
-                  className="btn-edit"
-                  onClick={() =>
-                    onAllowEdit(todo, todo.id === edit.id ? !edit.status : null)
-                  }
-                >
-                  <i className="far fa-edit"></i>
-                </button>
-
-                <button
-                  className="btn-delete"
-                  onClick={() => handleDeleteItem(todo)}
-                >
-                  <i className="fas fa-trash-alt"></i>
-                </button>
-              </div>
-            </div>
+          todoList.map((item, index) => (
+            <Todo
+              key={index}
+              handleCheckComplete={handleCheckComplete}
+              handleDeleteItem={handleDeleteItem}
+              handleEdit={handleEdit}
+              todo={item}
+            />
           ))}
       </div>
       <div className="todo-footer">
