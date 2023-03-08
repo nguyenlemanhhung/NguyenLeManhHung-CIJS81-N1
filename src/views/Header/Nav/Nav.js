@@ -25,6 +25,18 @@ class Nav extends React.Component {
         >
           TrafficLights
         </NavLink>
+        <NavLink
+          to="/Netlify"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Netlify
+        </NavLink>
+        <NavLink
+          to="/Supermomos"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Supermomos
+        </NavLink>
       </div>
     );
   }

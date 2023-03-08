@@ -1,5 +1,6 @@
 .App {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #fff;
   min-height: 100vh;
 }
 .App input {
@@ -22,5 +23,5 @@
   color: #fff;
 }
 .App main {
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }

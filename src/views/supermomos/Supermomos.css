@@ -1,0 +1,20 @@
+.supermomos-container {
+  width: 100%;
+  min-height: 150vh;
+  background: linear-gradient(138.11deg, #fef452, #942f70 121.92%);
+}
+.supermomos-container a {
+  text-decoration: none;
+}
+.supermomos-container .navbar {
+  padding: 20px 0;
+}
+.supermomos-container .navbar .menu-item {
+  margin: 0 20px;
+}
+.supermomos-container .navbar .menu-item a {
+  color: #000;
+}
+.supermomos-container .navbar .menu-item:hover a {
+  color: blue;
+}
