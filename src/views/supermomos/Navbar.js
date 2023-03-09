@@ -12,13 +12,9 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="container">
-        {/* <div className="logo">
-          <img
-            src={require("../../assets/images/whitefoologohead.png")}
-            className="me-2"
-          />
+        <div className="logo">
           <img src={require("../../assets/images/whitefoologocap.png")} />
-        </div> */}
+        </div>
         <div className="menu d-flex">
           {navMenu.map((item) => {
             return (

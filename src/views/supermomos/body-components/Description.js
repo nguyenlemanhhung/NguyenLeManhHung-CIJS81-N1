@@ -1,7 +1,21 @@
 import React from "react";
 
 function Description() {
-  return <div>Description</div>;
+  return (
+    <div className="description-container mb-4">
+      <p className="title mb-3">Description</p>
+      <textarea
+        className="input-description"
+        placeholder="Description of your event.."
+        rows={10}
+        style={{
+          width: "50%",
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      />
+    </div>
+  );
 }
 
 export default Description;

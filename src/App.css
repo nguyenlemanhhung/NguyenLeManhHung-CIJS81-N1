@@ -4,11 +4,11 @@
   min-height: 100vh;
 }
 .App input {
-  background-color: transparent;
+  /* background-color: transparent;
   padding: 10px 15px;
   outline: none;
   border-radius: 5px;
-  color: #fff;
+  color: #fff; */
   /* border: 1px solid #cecece; */
 }
 .App input:focus {
