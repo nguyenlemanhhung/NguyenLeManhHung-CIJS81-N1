@@ -6,6 +6,7 @@ import TodoList from "./views/TodoList/TodoList";
 import TrafficLights from "./views/TrafficLights/TrafficLights";
 import Netlify from "./views/netlify/Netlify";
 import Supermomos from "./views/supermomos/Supermomos";
+import Preview from "./views/supermomos/Preview";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/TrafficLights" element={<TrafficLights />} />
             <Route path="/Netlify" element={<Netlify />} />
             <Route path="/Supermomos" element={<Supermomos />} />
+            <Route path="/Supermomos/Preview" element={<Preview />} />
           </Routes>
         </div>
       </main>

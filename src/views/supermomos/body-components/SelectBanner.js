@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 
 const listImages = [
   {
@@ -31,11 +31,7 @@ const listImages = [
   },
 ];
 
-function SelectBanner() {
-  const [selectImage, setSelectImage] = useState();
-  const handleSelectImage = (path) => {
-    setSelectImage(path);
-  };
+function SelectBanner({ handleSelectImage, imageUrl }) {
   return (
     <div className="select-container">
       <div
@@ -43,10 +39,10 @@ function SelectBanner() {
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
         style={{
-          backgroundImage: `url(${selectImage})`,
+          backgroundImage: `url(${imageUrl})`,
         }}
       >
-        {!selectImage ? (
+        {!imageUrl ? (
           <div
             style={{
               color: "#14597A",

@@ -6,7 +6,7 @@
   min-height: 150vh;
   background: linear-gradient(138.11deg, #fef452, #942f70 121.92%);
 }
-.Form-container .form input {
+.body-container .form input {
   border: 1px solid #d9d9d9;
   border-radius: 5px;
   background-color: #fff;
@@ -14,19 +14,19 @@
   padding: 5px 10px;
   width: 100%;
 }
-.Form-container .title {
+.body-container .title {
   background: rgb(148, 47, 112);
   padding: 4px 12px;
   margin-bottom: 30px;
   width: max-content;
 }
-.Form-container .title h1 {
+.body-container .title h1 {
   color: #fff;
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
 }
-.Form-container .form i {
+.body-container i {
   color: #14597a;
 }
 .supermomos-container a {
